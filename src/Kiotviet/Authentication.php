@@ -42,7 +42,7 @@ class Authentication
             $response = json_decode($response, true);
 
             self::$accessToken = $response['access_token'];
-            self::$expireIn = $response['expire_in'];
+            self::$expireIn = $response['expires_in'];
             self::$retailer = $retailer;
         }
     }
